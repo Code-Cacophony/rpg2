@@ -21,12 +21,13 @@ _HTML, CSS, Bootstrap, jQuery, JavaScript, Node, Jest, Babel_
 |Behavior|Input|Output|
 |-----|-----|-----|
 
-1. Add constructors
-2. Create properties for constructors
-3. Create prototypes for properties
-4. 
-
-## Legal
+1. player should start on same square every time
+2. player should start with 50 HP points
+3. each time player advances a square points go up in 1 point increments
+4. player can move anywhere on the board until they reach the toilet paper
+5. upon reachong toilet paper they win
+6
+## Legalla
 
 #### MIT License
 

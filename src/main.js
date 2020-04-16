@@ -1,20 +1,20 @@
-
-
-
-//-Just an example---
-import { pingPong } from './ping-pong'; //-or ./../src/file-name.js
-import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import $ from 'jquery';
+import { Game } from '../src/RPG-game';
 
-$(document).ready(function() {
-  $('#ping-pong-form').submit(function(event) {
-    event.preventDefault();
-    var goal = $('#goal').val();
-    var output = pingPong(goal);
-    output.forEach(function(element) {
-      $('#solution').append("<li>" + element + "</li>");
-    });
-  });
-});
+
+
+
+function checkTurnBattle(game, battle, attackSelect) {
+  battle.enterBattle(attackSelect);
+  $("#enemyAttack").text('Hoarder just attacked you! What do you do?');
+  
+}
+
+$("#attack").click(function(event){
+  event.preventDefault();
+  let attackSelkect = $("input:radio[name=attackSelect]:checked").val();
+  check
+})
